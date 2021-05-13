@@ -1,0 +1,12 @@
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/bin/Debug/netcoreapp3.1/JohnnyRockersMusic.deps.json
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/bin/Debug/netcoreapp3.1/JohnnyRockersMusic.runtimeconfig.json
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/bin/Debug/netcoreapp3.1/JohnnyRockersMusic.runtimeconfig.dev.json
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/bin/Debug/netcoreapp3.1/JohnnyRockersMusic.dll
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/bin/Debug/netcoreapp3.1/JohnnyRockersMusic.pdb
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.csprojAssemblyReference.cache
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.AssemblyInfoInputs.cache
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.AssemblyInfo.cs
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.csproj.CoreCompileInputs.cache
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.dll
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.pdb
+/Users/jonasskoog/Projects/JohnnyRockersMusic/JohnnyRockersMusic/obj/Debug/netcoreapp3.1/JohnnyRockersMusic.genruntimeconfig.cache
