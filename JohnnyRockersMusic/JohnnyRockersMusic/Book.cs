@@ -9,13 +9,13 @@ namespace JohnnyRockersMusic
         private double Price { get; set; }
         private bool Bound { get; set; }
 
-        public override string Name { get; }
+       
 
-        public Book(string name, double price, bool bound)
+        public Book(string name, string author, double price, bool bound) : base(name)
         {
-            Name = name;
-            Price = price;
-            Bound = bound;
+            this.Author = author;
+            this.Price = price;
+            this.Bound = bound;
         }
 
         public override double GetPrice()
@@ -32,6 +32,11 @@ namespace JohnnyRockersMusic
         public override double GetVat()
         {
             return 0.06;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Book : {0}, {1}, {2} {3}", Name, Author, Price, Bound);
         }
     }
 }

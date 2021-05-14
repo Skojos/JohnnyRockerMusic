@@ -7,38 +7,78 @@ namespace JohnnyRockersMusic
     public class Order
     {
 
-        private List<Item> orders;
-      
-        //public List<Item> items { get; set; }
+        public List<Item> Orders;
 
-        public long Counter { get; set; }
+
+
+        public static long Counter = 0;
         public long OrderNumber { get; set; }
-       
 
-        public Order(Item[] items)
+
+        public Order(int orderNumber, params Item[] items)
         {
-            this.orders = items;
+            this.OrderNumber = orderNumber;
+            Orders = new List<Item>(items);
+            Counter = Counter + 1;
+            
         }
 
        
 
 
 
-        /* public void GetTotalValue()
+         public double GetTotalValue()
          {
-             foreach (var item in orders)
+            double total = 0;
+
+             foreach (Item item in Orders)
              {
-                 Console.WriteLine(item);
+                total += item.GetPrice();
              }
-         }*/
+
+            return total;
+         }
+
+        public double GetTotalValuePlusVat()
+        {
+            double total = 0;
+
+            foreach (Item item in Orders)
+            {
+                total += item.GetPricePlusVAT();
+
+            }
+
+            return total;
+        }
 
 
 
         public void GetReceipt()
         {
-            Console.WriteLine($"Receipt ")
-            
-          
+            Console.WriteLine($"Receipt for Order #{Counter}");
+            Console.WriteLine();
+
+            foreach (Item item in Orders)
+            {
+                
+                Console.WriteLine(item.ToString());
+                Console.WriteLine();
+                 
+            }
+
+
+           
+
+            Console.WriteLine($"Your ordernumber is: {OrderNumber}");
+            Console.WriteLine();
+            Console.WriteLine("Total excl. VAT: " + GetTotalValue() + " kr");
+            Console.WriteLine("Total incl. VAT: " + GetTotalValuePlusVat() + " kr");
+            Console.WriteLine();
+           
+
+            Console.WriteLine("---------------------------------------------");
+
         }
 
 

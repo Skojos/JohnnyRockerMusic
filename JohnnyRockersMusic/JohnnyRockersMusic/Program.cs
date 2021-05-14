@@ -11,18 +11,38 @@ namespace JohnnyRockersMusic
 
 
 
-            Recordning cd1 = new CompactDisc("Jonas Skoog", 2020, 9, "CD", 29.99);
-            Recordning cd2 = new CompactDisc("Kalle", 1990, 9, "CD", 10.0);
-            Recordning lp1 = new LongPlay("Kalle", 2020, 9, "LP", 10.0);
+           
+            Item cdOne = new CompactDisc("Punisher", "Phoebe Bridgers", 2020, 10, "CD", 200.0);
+            Item lpOne = new LongPlay("What kinda music", "Tome Mish", 2020, 10, "LP", 150.0);
+            Item lpTwo = new LongPlay("Little Oblivious", "Julien Barker", 2021, 10, "LP", 120.0);
 
-            Book b1 = new Book("Pelle", 10.0, true);
 
-            Console.WriteLine(b1.GetPricePlusVAT());
-            
 
-            Item[] order = {cd1,cd2, b1};
-            Order order1 = new Order(order);
-        
+
+
+            /*  Order[] items = new Order[2];
+
+
+
+              for (int i = 0; i < items.Length; i++)
+              {
+                  items[i] = new Order(bookOne, bookTwo);
+              }
+
+              */
+
+
+            Item[] order = { cdOne, lpOne, lpTwo };
+            Order order1 = new Order(373928,order);
+            order1.GetReceipt();
+
+            Item[] orderNew = { lpOne, lpTwo };
+            Order order2 = new Order(372928, orderNew);
+            order2.GetReceipt();
+
+
+
+
         }
     }
 }

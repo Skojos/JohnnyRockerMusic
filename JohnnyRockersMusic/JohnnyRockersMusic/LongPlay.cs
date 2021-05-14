@@ -3,7 +3,7 @@ namespace JohnnyRockersMusic
 {
     public class LongPlay : Recordning
     {
-        public LongPlay(string artist, int year, int condition, string type, double price)
+        public LongPlay(string name,string artist, int year, int condition, string type, double price) : base(name)
         {
             this.Artist = artist;
             this.Year = year;

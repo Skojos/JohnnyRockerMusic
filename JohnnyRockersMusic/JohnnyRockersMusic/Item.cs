@@ -8,8 +8,12 @@ namespace JohnnyRockersMusic
 
     {
 
-        public abstract string Name { get; }
+        public string Name { get; set;}
 
+        public Item(string name)
+        {
+            this.Name = name;
+        }
 
         public abstract double GetPrice();
 

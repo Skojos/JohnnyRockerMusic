@@ -12,7 +12,13 @@ namespace JohnnyRockersMusic
         public string Type { get; set; }
         public int Condition { get; set; }
 
-        public override string Name { get; }
+        public Recordning(string name) : base(name)
+        {
+
+        }
+
+
+
 
         public override double GetPrice()
 
@@ -37,6 +43,11 @@ namespace JohnnyRockersMusic
         public override double GetVat()
         {
             return 0.25;
+        }
+
+        public override string ToString()
+        {
+            return string.Format(" * Recording : Name: {0}, Artist: {1}, Year: {2}, Type: {3}, Condition: {4}, Original price: {5}, price: {6}, price ink vat: {7}", Name, Artist, Year, Type, Condition, Price, GetPrice(), GetPricePlusVAT());
         }
     }
 }
